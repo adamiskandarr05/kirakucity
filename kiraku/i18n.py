@@ -123,7 +123,9 @@ def event_view(event):
     if a=='Feedback':
         decision=text('Calculation verified.','Pengiraan disahkan.') if raw.get('correct') else text('This step needs another look.','Langkah ini perlu disemak semula.')
         if raw.get('trap'):decision+=' '+pair(raw['trap'])+'.'
-    elif a=='Quest':decision=text('Returning to a due practice issue.','Mengulang kaji isu latihan yang telah tiba masanya.') if raw.get('issue_id') else text('Choosing practice from this pupil’s saved mastery.','Memilih latihan berdasarkan penguasaan murid yang disimpan.')
+    elif a=='Quest':
+        if raw.get('requested_plot_id'):decision=text('Preparing the building improvement you chose.','Menyediakan naik taraf bangunan pilihan anda.')
+        else:decision=text('Returning to a due practice issue.','Mengulang kaji isu latihan yang telah tiba masanya.') if raw.get('issue_id') else text('Choosing practice from this pupil’s saved mastery.','Memilih latihan berdasarkan penguasaan murid yang disimpan.')
     elif a=='Hint':decision=translate(e['decision'])
     elif a=='Outcome':decision=text('The checked plan can improve the town.','Pelan yang disahkan boleh membangunkan bandar.') if raw.get('effect') else text('Calculations saved; this project is waiting for its target.','Pengiraan disimpan; projek ini menunggu sasarannya.')
     elif a=='Pelita':decision=MS.get(e['decision'],'Pelita menyediakan panduan untuk kes ini.') if language()=='ms' else e['decision']

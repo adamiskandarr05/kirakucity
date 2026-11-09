@@ -10,7 +10,7 @@ The imported set includes small houses, apartments, shops, civic office towers, 
 
 Phaser selects native frames and uses nearest-neighbour scaling. The renderer adds Kiraku's mission signs, dashed lot outlines, issue flags and construction effects. The world is 40 × 40 tiles, with four navigable districts, 102 saved starting buildings and 16 open mission plots. No Cytopia C++ engine code has been imported. The new camera supports panning, scroll zoom, district travel, overview and a state-based minimap.
 
-The town's four visual families are vegetation green; warm brick, red and amber; cream and grey masonry/infrastructure; and the blue windows present in the original city art. The HTML palette remains exactly as specified in the brief. Building shapes and readable Malay names identify the case types while preserving the imported artwork.
+The town's four visual families are vegetation green; warm brick, red and amber; cream and grey masonry/infrastructure; and the blue windows present in the original city art. The HTML palette remains exactly as specified in the brief. Building shapes and names in the selected language identify the case types while preserving the imported artwork.
 
 ### Earlier prototype assets retained in the project
 
@@ -38,13 +38,19 @@ The art uses no gradients, glow or blur. Text and controls follow the brief's ni
 
 | Case | Verified final condition | Saved town effect |
 | --- | --- | --- |
-| Kedai Bunga Melur | Reverse successive percentages, then calculate final selling price minus cost. Profit must reach target T. | Open or upgrade the shop; shops +1. |
-| Teksi Kiraku | Remove the flag fee to find distance, then include it in the new fare. | Open or upgrade a taxi stand; stands +1. |
-| Gerai Taman | Recover the missing daily sale and identify the unique mode. The mode must reach the target. | Open or upgrade a stall; stalls +1. |
-| Taman Kiraku | Solve width and length, cost one long fence side, and find shortfall. Shortfall must be zero. | Fund or upgrade the park; parks +1. A correct positive shortfall holds the project. |
+| Kedai Bunga Melur | Reverse successive percentages, then calculate final selling price minus cost. Profit must reach target T. | Open or upgrade the shop; the count increases only for a newly opened shop. |
+| Teksi Kiraku | Remove the flag fee to find distance, then include it in the new fare. | Open or upgrade a taxi stand; the count increases only for a new stand. |
+| Gerai Taman | Recover the missing daily sale and identify the unique mode. The mode must reach the target. | Open or upgrade a stall; the count increases only for a new stall. |
+| Taman Kiraku | Solve width and length, cost one long fence side, and find shortfall. Shortfall must be zero. | Fund or upgrade the park; the count increases only for a new park. A correct positive shortfall holds the project. |
 
 An empty plot has a dashed pixel outline, a small sign and a Kosong label; English appears on hover or in details. An open issue adds an amber flag. A rejected step changes the warning state only: it never builds a building or increments a count. The next Quest decision sends an amber pixel from the trace's direction to the assigned plot. A funded result triggers 600 ms growth, a short dust puff and a lit shop sign after returning to town.
 
-Seven NPCs use two-frame walks along the road network. Three cars traverse the outer road loop. A pause control and `prefers-reduced-motion` stop traffic; reduced motion makes construction and pulses immediate. The background has a single flat tint, with no day/night system.
+Seven NPCs use two-frame walks along the road network. Three cars traverse the outer road loop. A pause control and `prefers-reduced-motion` stop traffic; reduced motion makes construction and pulses immediate. The background is a flat blue sky with original code-drawn moving clouds. Reduced motion stops their movement. There is no day/night system.
 
 The landing image is a genuine capture of this Phaser canvas. The screenshots in `docs/screenshots/` show the actual UI, saved cases and real construction tween, rather than a design mockup.
+
+## Original upgrade designs and landscape
+
+`static/js/building-designs.js` draws original isometric floor-by-floor designs for level 2 and above. These are generated from code, with distinct shop, taxi, market and planted-park facades. Each level adds a floor and retains the same ground footprint. The Cytopia source PNGs remain unchanged.
+
+`landscape.py` owns the deterministic seed, irregular coast and lake, connected road mask and collision-safe lot placement. `static/js/landscape-scene.js` draws brightened grass at runtime, flat water bands, the jetty, lily pads, clouds and scattered scenery. It reuses original Cytopia tree and road sprites. No new external images or image-generation service were used.

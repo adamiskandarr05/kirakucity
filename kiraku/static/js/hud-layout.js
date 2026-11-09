@@ -24,4 +24,3 @@ const observer=new ResizeObserver(layoutHUD);
 for(const selector of ['#town-screen','.town-heading','.town-bottom','.district-navigation','.map-tools']){const el=document.querySelector(selector);if(el)observer.observe(el);}
 new MutationObserver(layoutHUD).observe(document.querySelector('#town-screen'),{attributes:true,attributeFilter:['class','hidden']});
 window.addEventListener('resize',layoutHUD);
-

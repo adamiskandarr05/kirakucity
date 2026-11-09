@@ -1,0 +1,203 @@
+{
+  "checks": [
+    {
+      "ok": true,
+      "description": "1440: sky has nine cloud sprites"
+    },
+    {
+      "ok": true,
+      "description": "1440: irregular lake is present"
+    },
+    {
+      "ok": true,
+      "description": "1440: sky replaces the green backdrop"
+    },
+    {
+      "ok": true,
+      "description": "1440: grass is measurably brighter ({'source': 84.97786458333337, 'bright': 119.53623188405798})"
+    },
+    {
+      "ok": true,
+      "description": "1440: lake navigation focuses the water"
+    },
+    {
+      "ok": true,
+      "description": "1440: case describes target level 1"
+    },
+    {
+      "ok": true,
+      "description": "1440: result confirms level 1"
+    },
+    {
+      "ok": true,
+      "description": "1440: saved building renders level 1"
+    },
+    {
+      "ok": true,
+      "description": "1440: case describes target level 2"
+    },
+    {
+      "ok": true,
+      "description": "1440: result confirms level 2"
+    },
+    {
+      "ok": true,
+      "description": "1440: saved building renders level 2"
+    },
+    {
+      "ok": true,
+      "description": "1440: level 2 has a new taller design"
+    },
+    {
+      "ok": true,
+      "description": "1440: case describes target level 3"
+    },
+    {
+      "ok": true,
+      "description": "1440: result confirms level 3"
+    },
+    {
+      "ok": true,
+      "description": "1440: saved building renders level 3"
+    },
+    {
+      "ok": true,
+      "description": "1440: level 3 has a new taller design"
+    },
+    {
+      "ok": true,
+      "description": "1440: case describes target level 4"
+    },
+    {
+      "ok": true,
+      "description": "1440: result confirms level 4"
+    },
+    {
+      "ok": true,
+      "description": "1440: saved building renders level 4"
+    },
+    {
+      "ok": true,
+      "description": "1440: level 4 has a new taller design"
+    },
+    {
+      "ok": true,
+      "description": "1440: four visibly distinct building stages"
+    },
+    {
+      "ok": true,
+      "description": "1440: Pelita paths stay on roads around water"
+    },
+    {
+      "ok": true,
+      "description": "1440: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "390: sky has nine cloud sprites"
+    },
+    {
+      "ok": true,
+      "description": "390: irregular lake is present"
+    },
+    {
+      "ok": true,
+      "description": "390: sky replaces the green backdrop"
+    },
+    {
+      "ok": true,
+      "description": "390: grass is measurably brighter ({'source': 84.97786458333337, 'bright': 119.53623188405798})"
+    },
+    {
+      "ok": true,
+      "description": "390: lake navigation focuses the water"
+    },
+    {
+      "ok": true,
+      "description": "390: case describes target level 1"
+    },
+    {
+      "ok": true,
+      "description": "390: result confirms level 1"
+    },
+    {
+      "ok": true,
+      "description": "390: saved building renders level 1"
+    },
+    {
+      "ok": true,
+      "description": "390: case describes target level 2"
+    },
+    {
+      "ok": true,
+      "description": "390: result confirms level 2"
+    },
+    {
+      "ok": true,
+      "description": "390: saved building renders level 2"
+    },
+    {
+      "ok": true,
+      "description": "390: level 2 has a new taller design"
+    },
+    {
+      "ok": true,
+      "description": "390: case describes target level 3"
+    },
+    {
+      "ok": true,
+      "description": "390: result confirms level 3"
+    },
+    {
+      "ok": true,
+      "description": "390: saved building renders level 3"
+    },
+    {
+      "ok": true,
+      "description": "390: level 3 has a new taller design"
+    },
+    {
+      "ok": true,
+      "description": "390: case describes target level 4"
+    },
+    {
+      "ok": true,
+      "description": "390: result confirms level 4"
+    },
+    {
+      "ok": true,
+      "description": "390: saved building renders level 4"
+    },
+    {
+      "ok": true,
+      "description": "390: level 4 has a new taller design"
+    },
+    {
+      "ok": true,
+      "description": "390: four visibly distinct building stages"
+    },
+    {
+      "ok": true,
+      "description": "390: Pelita paths stay on roads around water"
+    },
+    {
+      "ok": true,
+      "description": "390: no browser errors"
+    }
+  ],
+  "screens": [
+    "22-lake-island-1440.png",
+    "23-lakeside-1440.png",
+    "24-building-level-1-1440.png",
+    "24-building-level-2-1440.png",
+    "24-building-level-3-1440.png",
+    "24-building-level-4-1440.png",
+    "22-lake-island-390.png",
+    "23-lakeside-390.png",
+    "24-building-level-1-390.png",
+    "24-building-level-2-390.png",
+    "24-building-level-3-390.png",
+    "24-building-level-4-390.png"
+  ],
+  "errors": []
+}

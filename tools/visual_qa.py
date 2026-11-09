@@ -85,7 +85,7 @@ def run_width(browser,width,height,base_url):
     check(page.evaluate('window.__kirakuTown.source')=='Cytopia',f'{width}px: original Cytopia artwork is loaded')
     check(page.evaluate('window.__kirakuTown.scene.buildings.size')==118,f'{width}px: all 118 saved city lots are rendered')
     for district in ['skyline','homes','gardens','market']:
-        
+
         if width<=760:page.locator('#toggle-districts').click()
         page.locator(f'[data-district="{district}"]').click();page.wait_for_timeout(650)
         check(page.locator('#building-detail').is_hidden(),f'{width}px: district control does not click a building behind it ({district})')

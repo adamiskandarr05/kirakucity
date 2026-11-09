@@ -39,6 +39,18 @@ Use **Settings ⚙ → Language** to choose **English** or **Bahasa Melayu**. Th
 
 Use **Settings → Prepare demo progress** to complete eight cases for fictional Pupil A. It submits checked answers through the normal game API, including an initial misconception, a hint, a later revisit, funding decisions and a teacher report. It keeps existing progress and adds only enough cases to reach eight, so repeating it does not duplicate history. The current local demo is already prepared. The ZIP excludes the local database; use this button after starting a fresh copy.
 
+## Visible building upgrades and a brighter landscape
+
+Every earned building level now has a visibly taller design. Level 1 retains its Cytopia artwork. Level 2 and above use original code-drawn Kiraku designs, adding another floor per level, category-specific frontage, rooftop planting, solar details and later roof features. The footprint stays inside the saved lot. Parks gain a planted pavilion. The building name and street are retained during upgrades.
+
+Open a mission building from the map or Building list and choose **Upgrade this building**. Quest records the selected building and prepares its matching mathematics case. A case already in progress is resumed first. All steps must still be verified and the funding target met; a held project does not gain a level. Automatic Next case selection continues to fill empty mission plots before upgrading existing ones. Building counters count buildings, rather than treating extra floors as additional buildings.
+
+The seeded landscape has irregular road blocks, scattered lot placement, clustered trees and flowers, brighter grass, an uneven island coast and **Cloud Lake / Tasik Awan**, with a timber jetty and lily pads. **Visit the lake** travels to it. The whole-city view shows the island against a blue sky and moving clouds. Pelita follows the connected road network around the water. Existing town IDs, levels, cases, funding links and open issues survive the layout migration.
+
+The map uses a steady 60 Hz timer fallback so phones keep animating when browser paint callbacks are suppressed. Selected upgrades remain visible through foreground buildings. Town notifications use Pelita's existing card, and minimap text uses immutable bitmap labels.
+
+Browser evidence for four visible stages, lake navigation, grass brightness and safe paths is in [world-qa.json](docs/world-qa.json). Run `python tools/world_qa.py --chrome "C:\Program Files\Google\Chrome\Application\chrome.exe"` to reproduce it.
+
 ## Tests and screenshots
 
 ```powershell
@@ -53,7 +65,7 @@ If Chrome is already installed, the browser check can use it instead:
 .\.venv\Scripts\python.exe tools/visual_qa.py --chrome "C:\Program Files\Google\Chrome\Application\chrome.exe"
 ```
 
-The automated maths and API suite contains **57 passing tests**, including **200 seeds for each of the four templates**, original Cytopia file hashes, city footprints and preservation of a funded case during migration. The browser check uses temporary databases, blocks external network requests, and checks the complete play loop at 1440 × 900 and 390 × 844. It also checks district navigation, zoom, the city overview, reduced motion and town layouts at 1024, 768 and 320 pixels. It does not modify your saved town.
+The automated maths and API suite contains **61 passing tests**, including **200 seeds for each of the four templates**, original Cytopia file hashes, city footprints and preservation of a funded case during migration. The browser check uses temporary databases, blocks external network requests, and checks the complete play loop at 1440 × 900 and 390 × 844. It also checks district navigation, zoom, the city overview, reduced motion and town layouts at 1024, 768 and 320 pixels. It does not modify your saved town.
 
 Browser evidence: [visual-qa.json](docs/visual-qa.json) and [update-qa.json](docs/update-qa.json). Run `python tools/update_qa.py --chrome "C:\Program Files\Google\Chrome\Application\chrome.exe"` for the language, avatar, demo, camera and HUD checks at eight window sizes in both languages. Visual review notes: [QA.md](docs/QA.md). The building animation captures freeze the real 600 ms tween at approximately 220 ms, then resume it. The landing image is a real capture of the Phaser canvas, without interface overlays.
 
@@ -143,3 +155,5 @@ Art source and mappings: [ART.md](docs/ART.md). Framework, font, asset and AI cr
 - [Town, phone Bahasa Melayu](docs/screenshots/19-town-polished-390-ms.png)
 - [Pelita activity](docs/screenshots/20-pelita-activity.png)
 - [Language settings, English](docs/screenshots/21-settings-390-en.png) · [Bahasa Melayu](docs/screenshots/21-settings-390-ms.png)
+
+New landscape and upgrades: [island overview](docs/screenshots/22-lake-island-1440.png), [lake](docs/screenshots/23-lakeside-1440.png), [level 1](docs/screenshots/24-building-level-1-1440.png), [level 2](docs/screenshots/24-building-level-2-1440.png), [level 3](docs/screenshots/24-building-level-3-1440.png), [level 4](docs/screenshots/24-building-level-4-1440.png). Team handover: [TEAM-HANDOVER.md](docs/TEAM-HANDOVER.md).

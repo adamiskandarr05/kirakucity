@@ -88,19 +88,27 @@ def create_app(config=None):
 
     @app.post('/api/case/next')
     def next_case():
+        body=request.get_json(silent=True) or {}
+        if not isinstance(body,dict):raise ValueError('Send a JSON object.')
         with store.transaction() as db:
             active=current(db);pid=active['pupil_id']
+            requested=None
+            if 'plot_id' in body:
+                if type(body['plot_id']) is not int:raise ValueError('Invalid building')
+                requested=store.town_plot(db,pid,body['plot_id'])
+                if not requested['template_id']:raise ValueError('This building does not have a maths case.')
             existing=store.active_case(db,pid)
             if existing: return jsonify(case=public_case(existing),resumed=True)
             before=store.events(db,limit=1);last=before[0]['id'] if before else 0
             logger=Logger(store,db,pid)
             pupil=store.pupil(db,pid)
-            template=quest.choose(pupil,store.issues(db,pid),active['completed'],logger)
+            template=quest.choose(pupil,store.issues(db,pid),active['completed'],logger,requested=requested)
             seed=int(hashlib.sha256(f"{pid}:{active['completed']}:{template.id}".encode()).hexdigest()[:10],16)
             data=problem.make_problem(template,seed,logger,default=active['completed']==0)
-            data=scenario.fill(data,active['completed'],logger)
+            plot=requested or store.choose_plot(db,pid,template.id)
+            data=scenario.fill(data,active['completed'],logger,location=plot if plot['status']=='built' else None)
             data['narration']=narration.narrate(data,logger)
-            plot=store.choose_plot(db,pid,template.id)
+            data['progression']=dict(action='upgrade' if plot['status']=='built' else 'build',current_level=plot['level'] if plot['status']=='built' else 0,next_level=plot['level']+1 if plot['status']=='built' else 1)
             case=store.add_case(db,active,data,plot['id'])
             store.attach_actions(db,pid,last,case['id'])
             return jsonify(case=public_case(case),resumed=False)
@@ -148,7 +156,7 @@ def create_app(config=None):
             all_correct=len(accepted)==len(case['data']['steps'])
             if not all_correct: return jsonify(error='Verify every step before finishing. The town has not changed.'),409
             logger=Logger(store,db,case['pupil_id'],case['id'])
-            result=outcome.evaluate(case,all_correct,logger)
+            result=outcome.evaluate(case,all_correct,logger,plot=store.town_plot(db,case['pupil_id'],case['plot_id']))
             result['review']=narration.narrate(case,logger,review=True)
             result['marks']=[dict(label=s['label'],verified=True,solution=s['solution']['worked']) for s in case['data']['steps']]
             store.resolve_issues(db,case)

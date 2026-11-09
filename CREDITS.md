@@ -13,7 +13,7 @@
 | Cytopia contributors, including Kingtut 101, RockFort, Yusuf8a684 and the artists named per file | **Current city:** 31 original building, park, road, ground, tree and street-light PNG sheets, imported at revision `c70bbce3ba8b0ba23b8dcce9ff8bc8df0af971f8` | [GNU GPL version 3](https://github.com/CytopiaTeam/Cytopia/blob/c70bbce3ba8b0ba23b8dcce9ff8bc8df0af971f8/license.txt). Unchanged source sheets, full upstream credits, licence and per-file provenance are included under `static/assets/cytopia/`. |
 | Kenney Isometric Tiles City | Earlier prototype park base and trees, retained as legacy assets | [CC0 1.0 Universal](https://kenney.nl/assets/isometric-tiles-city); included source license |
 | Kenney Isometric Buildings #1 | Earlier prototype building bases and roof, retained as legacy assets | [CC0 1.0 Universal](https://opengameart.org/content/isometric-buildings-1); included source license |
-| Kiraku pixel adaptations, Pelita, NPCs and cars | Original pixel sprites and adaptations | CC0 1.0 Universal; `static/assets/pixel/LICENSE.txt` |
+| Kiraku pixel adaptations, Pelita, NPCs, cars, upgrade designs and landscape | Original pixel sprites, code-drawn floor-by-floor buildings, sky, clouds, lake and jetty; reused Cytopia sprites retain their own source credits | CC0 1.0 Universal; `static/assets/pixel/LICENSE.txt` |
 | pytest 8.3.4 | Offline maths and API tests | [MIT](https://github.com/pytest-dev/pytest/blob/8.3.4/LICENSE) |
 | Playwright 1.58.0 | Browser acceptance checks and screenshots | [Apache-2.0](https://github.com/microsoft/playwright/blob/v1.58.0/LICENSE) |
 | Google Chrome | Browser used for the supplied screenshots | [Google Chrome terms](https://www.google.com/chrome/terms/); no browser binary is distributed |

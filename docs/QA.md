@@ -2,7 +2,7 @@
 
 ## Requested game checks
 
-- **57 pytest tests pass**, with no network or API key. The suite covers 200 generated seeds per template, verifier rejection rules, hint answer protection, issue scheduling, mastery streaks, outcomes, town changes, trace persistence, step order and duplicate submissions.
+- **61 pytest tests pass**, with no network or API key. The suite covers 200 generated seeds per template, verifier rejection rules, hint answer protection, issue scheduling, mastery streaks, outcomes, town changes, trace persistence, step order and duplicate submissions.
 - Four city-specific tests verify all original Cytopia PNG hashes, all saved lot footprints and frame indexes, non-overlapping lots, repeat-safe database opening, and expansion of a legacy city without losing a funded case or its calculation.
 - **40 Playwright screenshots** cover every screen at 1440 × 900 and 390 × 844, including three hint levels, rejected and verified working, expanded raw trace, the result, a building during its 600 ms growth, the funded-building calculation, the teacher report, the skyline and a whole-city overview.
 - The browser report records **101 passing checks**, including district navigation, no click-through behind controls, zoom, all 118 saved lots rendered, no horizontal page overflow, 14px rendered map labels, label collisions before and after construction, trace rows matching saved decisions, traffic, construction, and reduced motion for both people and cars.
@@ -35,3 +35,15 @@ The camera checks cover drag travel, release momentum and interpolated zoom sett
 The suite also opens Pelita by clicking the town sprite, checks every displayed activity ID against saved decisions, exercises motion settings, switches language with a typed answer, generates teacher reports in both languages, and repeats demo preparation through Settings. Eight fictional completed cases include verified answers, a misconception and hint, a scheduled revisit, funding decisions and a teacher report. Existing progress is retained.
 
 Report: [update-qa.json](update-qa.json). The original full solve/build flow also passes all 101 checks with 40 screenshots. There are 51 screenshots and 269 passing browser checks across the two suites. The separate landing-style findings above remain recorded; this update does not claim to pass that marketing-layout checker.
+
+## Visible upgrades and landscape validation
+
+Four new backend tests verify safe land/water placement, targeted upgrades through five saved levels, strictly increasing design heights, unchanged footprints and building counts during upgrades, replay-safe finish requests, exact logged funding effects, pupil ownership, required verification and lossless version-2 landscape migration. The current suite has **61 passing tests**.
+
+`world_qa.py` adds **46 passing browser checks** and **12 screenshots**. It builds a taxi stand through the actual interface and upgrades it to levels 2, 3 and 4 on desktop and phone, checking a different texture and greater height at every stage. It measures brighter grass, checks the irregular lake and cloud backdrop, navigates to the lake, and verifies Pelita's route uses the road network around water. Labels and HUD checks are retained in the other suites. The rendered result is inspected visually in the corresponding screenshots.
+
+The phone regression exposed browsers suppressing animation-frame callbacks after startup. Phaser now uses its supported 60 Hz timer fallback; the full play loop, traffic, construction and reduced-motion checks were rerun. Minimap labels use immutable bitmap textures to prevent clipped glyphs. Upgrade notifications use the existing guide card and foreground buildings fade when they obstruct a selected upgrade.
+
+The saved local town was backed up before migration. A before/after comparison verified every pupil, mastery, session, case, attempt, issue and log row unchanged, and every town field except its layout coordinates unchanged. Pupil A retains eight completed cases and 118 town lots.
+
+Current reports: `visual-qa.json` (101 checks), `update-qa.json` (168 checks), and `world-qa.json` (46 checks): **315 browser checks and 63 screenshots** in total. The separate historical marketing-style findings remain documented above.

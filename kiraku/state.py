@@ -11,6 +11,8 @@ from pathlib import Path
 
 from .cases.templates import TOPICS
 from .city import CITY,CORE_ART,extended_lots
+from .landscape import arrange
+from .progression import appearance
 
 
 def now():
@@ -45,6 +47,16 @@ class State:
             if not db.execute('SELECT 1 FROM pupils LIMIT 1').fetchone():
                 self.seed(db)
             self.migrate_city(db)
+            self.migrate_landscape(db)
+
+    def migrate_landscape(self,db):
+        if db.execute('PRAGMA user_version').fetchone()[0]>=3:return
+        # The legacy fixture intentionally defers all city migrations.
+        if 'footprint' not in {r['name'] for r in db.execute('PRAGMA table_info(town)')}:return
+        for pupil in db.execute('SELECT id FROM pupils').fetchall():
+            plots=[dict(r) for r in db.execute('SELECT * FROM town WHERE pupil_id=?',(pupil['id'],))]
+            for plot_id,(x,y) in arrange(plots,CITY['roads']).items():db.execute('UPDATE town SET x=?,y=? WHERE id=?',(x,y,plot_id))
+        db.execute('PRAGMA user_version=3')
 
     def migrate_city(self,db):
         """Expand older towns in place, preserving all case and funding links."""
@@ -134,7 +146,8 @@ class State:
         issues = self.issues(db,pid)
         for p in plots:
             p['waiting'] = any(i['plot_id']==p['id'] for i in issues)
-        counts = {k:sum(p['level'] for p in plots if p['kind']==k and p['status']=='built') for k in ['shops','stalls','parks','stands']}
+            p['appearance']=appearance(p)
+        counts = {k:sum(1 for p in plots if p['kind']==k and p['status']=='built') for k in ['shops','stalls','parks','stands']}
         completed=db.execute("SELECT COUNT(*) FROM cases WHERE pupil_id=? AND status='finished'",(pid,)).fetchone()[0]
         return dict(pupil=self.pupil(db,pid), town=plots, counts=counts, open_issues=issues,city=CITY,completed_cases=completed,
                     city_summary=dict(buildings=sum(p['status']=='built' for p in plots),plots=sum(p['status']=='empty' for p in plots),districts=len(CITY['districts'])))
@@ -144,6 +157,11 @@ class State:
 
     def choose_plot(self, db, pid, template_id):
         return dict(db.execute("SELECT * FROM town WHERE pupil_id=? AND template_id=? ORDER BY (status='empty') DESC,level,id LIMIT 1",(pid,template_id)).fetchone())
+
+    def town_plot(self,db,pid,plot_id):
+        row=db.execute('SELECT * FROM town WHERE pupil_id=? AND id=?',(pid,plot_id)).fetchone()
+        if not row:raise LookupError('Building not found for this pupil')
+        return dict(row)
 
     def active_case(self, db, pid):
         r = db.execute("SELECT id FROM cases WHERE pupil_id=? AND status='active' ORDER BY created_at DESC LIMIT 1",(pid,)).fetchone()

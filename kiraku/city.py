@@ -2,7 +2,9 @@
 
 All occupied lots become town rows. The renderer never invents buildings.
 """
-CITY = dict(version=2, size=40, roads=[2,7,12,16,20,23,28,33,37],
+from .landscape import environment
+
+CITY = dict(version=3, size=40, roads=[2,7,12,16,20,23,28,33,37],
     source='Cytopia',source_url='https://github.com/CytopiaTeam/Cytopia',
     districts=[
         dict(id='market',name='Pusat bandar',english='Town centre',x=18,y=18),
@@ -10,6 +12,7 @@ CITY = dict(version=2, size=40, roads=[2,7,12,16,20,23,28,33,37],
         dict(id='skyline',name='Dataran Awan',english='Civic skyline',x=26,y=9),
         dict(id='gardens',name='Taman Rimba',english='Garden district',x=26,y=29),
     ])
+CITY['landscape']=environment(CITY['roads'])
 
 CORE_ART = {
     (2,2):'com_1x1_JimmysBread', (6,2):'com_1x1_CafeApartment_kt',
