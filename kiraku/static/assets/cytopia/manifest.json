@@ -1,0 +1,628 @@
+{
+  "project": "Cytopia",
+  "repository": "https://github.com/CytopiaTeam/Cytopia",
+  "commit": "c70bbce3ba8b0ba23b8dcce9ff8bc8df0af971f8",
+  "license": "GPL-3.0",
+  "assets": [
+    {
+      "id": "com_1x1_JimmysBread",
+      "source_path": "data/resources/images/buildings/commercial/com_1x1_JimmysBreads_Y8.png",
+      "file": "com_1x1_JimmysBreads_Y8.png",
+      "author": "Yusuf8a684",
+      "title": "Jimmy's Bread",
+      "tiles": {
+        "clip_height": 25,
+        "clip_width": 32,
+        "count": 1,
+        "fileName": "resources/images/buildings/commercial/com_1x1_JimmysBreads_Y8.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "6bfedb20f644c2822eef3789e647ab9aef5e08be56b68902064df11e60f0e1c9"
+    },
+    {
+      "id": "com_1x1_BikeShop",
+      "source_path": "data/resources/images/buildings/commercial/com_1x1_BikeShop.png",
+      "file": "com_1x1_BikeShop.png",
+      "author": "Kingtut 101",
+      "title": "Bike Shop",
+      "tiles": {
+        "clip_height": 30,
+        "clip_width": 32,
+        "count": 1,
+        "fileName": "resources/images/buildings/commercial/com_1x1_BikeShop.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "3492d301b23eebd24fd3256a48bba0b847e28e80675f42a8cfdd3d05b6cb89cf"
+    },
+    {
+      "id": "com_1x1_CafeApartment_kt",
+      "source_path": "data/resources/images/buildings/commercial/com_1x1_CafeApartment_kt.png",
+      "file": "com_1x1_CafeApartment_kt.png",
+      "author": "Kingtut 101",
+      "title": "Cafe Apartment",
+      "tiles": {
+        "clip_height": 35,
+        "clip_width": 32,
+        "count": 2,
+        "fileName": "resources/images/buildings/commercial/com_1x1_CafeApartment_kt.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "f97607432440f63c447c9aab97eed4ac2f7ceca14dcb6aa0d61b1d0eb18b1e40"
+    },
+    {
+      "id": "com_1x1_ClockStore1",
+      "source_path": "data/resources/images/buildings/commercial/com_1x1_ClockStore.png",
+      "file": "com_1x1_ClockStore.png",
+      "author": "Kingtut 101",
+      "title": "Clock Store",
+      "tiles": {
+        "clip_height": 25,
+        "clip_width": 32,
+        "count": 3,
+        "fileName": "resources/images/buildings/commercial/com_1x1_ClockStore.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "b17e443218c0af8e938c2d99cbce3e4470ef0a81c7aa2e56c13b59b901542490"
+    },
+    {
+      "id": "com_1x1_LisieuxPlantCare",
+      "source_path": "data/resources/images/buildings/commercial/com_1x1_LisieuxPlantCare_RF.png",
+      "file": "com_1x1_LisieuxPlantCare_RF.png",
+      "author": "RockFort",
+      "title": "Lisieux Plant Care",
+      "tiles": {
+        "clip_height": 39,
+        "clip_width": 32,
+        "count": 1,
+        "fileName": "resources/images/buildings/commercial/com_1x1_LisieuxPlantCare_RF.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "8ee4a3a6309a051d753585eb50d1d5f08d4457f9c13998dc4632758d70c61026"
+    },
+    {
+      "id": "com_1x1_CompactFastshop_MS",
+      "source_path": "data/resources/images/buildings/commercial/com_1x1_CompactFastshop_MS.png",
+      "file": "com_1x1_CompactFastshop_MS.png",
+      "author": "MaroonShaded",
+      "title": "Compact FastShop",
+      "tiles": {
+        "clip_height": 19,
+        "clip_width": 32,
+        "count": 1,
+        "fileName": "resources/images/buildings/commercial/com_1x1_CompactFastshop_MS.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "ecd0246a6291c5616c7592a0cab741484e039f6f96e4fb439d32bed1800bf2a6"
+    },
+    {
+      "id": "com_1x1_LisieuxShoppe",
+      "source_path": "data/resources/images/buildings/commercial/com_1x1_LisieuxShoppe.png",
+      "file": "com_1x1_LisieuxShoppe.png",
+      "author": "RockFort",
+      "title": "Lisieux Shoppe",
+      "tiles": {
+        "clip_height": 36,
+        "clip_width": 32,
+        "count": 1,
+        "fileName": "resources/images/buildings/commercial/com_1x1_LisieuxShoppe.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "ddd5ff4fa89124edf664da2345ccb45817544774fc5eef1f2b6f275aba761e37"
+    },
+    {
+      "id": "com_1x1_StairStepShop",
+      "source_path": "data/resources/images/buildings/commercial/com_2x2_StairStepShop.png",
+      "file": "com_2x2_StairStepShop.png",
+      "author": "Kingtut 101",
+      "title": "Stair-Step Shop",
+      "tiles": {
+        "clip_height": 36,
+        "clip_width": 64,
+        "count": 2,
+        "fileName": "resources/images/buildings/commercial/com_2x2_StairStepShop.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 2,
+        "width": 2
+      },
+      "sha256": "d535e12a41ae507b687f6ceeaacd3aa027aa0e17fceb254e7b8530d1306db906"
+    },
+    {
+      "id": "com_2x2_TanTower_kt",
+      "source_path": "data/resources/images/buildings/commercial/com_2x2_TanTower_kt.png",
+      "file": "com_2x2_TanTower_kt.png",
+      "author": "Kingtut 101",
+      "title": "Tan Tower",
+      "tiles": {
+        "clip_height": 64,
+        "clip_width": 64,
+        "count": 1,
+        "fileName": "resources/images/buildings/commercial/com_2x2_TanTower_kt.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 2,
+        "width": 2
+      },
+      "sha256": "258bcca9c2546b4edba3195444775e18ff95da97b9843ad332559dd8980da8ad"
+    },
+    {
+      "id": "com_2x2_BaltOffice",
+      "source_path": "data/resources/images/buildings/commercial/com_2x2_BaltOffice_RF.png",
+      "file": "com_2x2_BaltOffice_RF.png",
+      "author": "RockFort",
+      "title": "Balt Office",
+      "tiles": {
+        "clip_height": 88,
+        "clip_width": 64,
+        "count": 1,
+        "fileName": "resources/images/buildings/commercial/com_2x2_BaltOffice_RF.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 2,
+        "width": 2
+      },
+      "sha256": "312d9c0d6b245fb8f3983adc65c5ac7eda6bb68720e68d0878bebe3722fcbed4"
+    },
+    {
+      "id": "com_3x3_CommunityTower",
+      "source_path": "data/resources/images/buildings/commercial/com_3x3_CommunityTower.png",
+      "file": "com_3x3_CommunityTower.png",
+      "author": "Kingtut 101",
+      "title": "Community Tower",
+      "tiles": {
+        "clip_height": 119,
+        "clip_width": 96,
+        "count": 1,
+        "fileName": "resources/images/buildings/commercial/com_3x3_CommunityTower.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 3,
+        "width": 3
+      },
+      "sha256": "643b5f54540b10d79086af8222fb908999d14a8af0a1455254d1400adcebe600"
+    },
+    {
+      "id": "res_1x1_ClassicHouse_MS",
+      "source_path": "data/resources/images/buildings/residential/res_1x1_ClassicHouse_MS.png",
+      "file": "res_1x1_ClassicHouse_MS.png",
+      "author": "MaroonShaded",
+      "title": "Classic White House",
+      "tiles": {
+        "clip_height": 32,
+        "clip_width": 32,
+        "count": 1,
+        "fileName": "resources/images/buildings/residential/res_1x1_ClassicHouse_MS.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "71dfa656e505a7fb71ce806155dc5ed056c3c5a5faedbdbe75ff1205d77650b1"
+    },
+    {
+      "id": "res_1x1_FrenchAbode",
+      "source_path": "data/resources/images/buildings/residential/res_1x1_FrenchAbode_RF.png",
+      "file": "res_1x1_FrenchAbode_RF.png",
+      "author": "RockFort",
+      "title": "French Abode",
+      "tiles": {
+        "clip_height": 32,
+        "clip_width": 32,
+        "count": 1,
+        "fileName": "resources/images/buildings/residential/res_1x1_FrenchAbode_RF.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "df10f6deb197c00f27003bdfef1eb8b199f873a2bd83df4cc70caece32f7dcf0"
+    },
+    {
+      "id": "res_1x1_SmallRedHouse_RF",
+      "source_path": "data/resources/images/buildings/residential/res_1x1_SmallRedHouse_RF.png",
+      "file": "res_1x1_SmallRedHouse_RF.png",
+      "author": "RockFort",
+      "title": "Small Brick House",
+      "tiles": {
+        "clip_height": 25,
+        "clip_width": 32,
+        "count": 1,
+        "fileName": "resources/images/buildings/residential/res_1x1_SmallRedHouse_RF.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "21b5dadff6ad37dac3c71242f1215a7a3d5873364790ac6607d66f29be7665da"
+    },
+    {
+      "id": "res_1x1_GreenHouseHouse",
+      "source_path": "data/resources/images/buildings/residential/res_1x1_GreenhouseHouse.png",
+      "file": "res_1x1_GreenhouseHouse.png",
+      "author": "Kingtut 101",
+      "title": "Greenhouse House",
+      "tiles": {
+        "clip_height": 22,
+        "clip_width": 32,
+        "count": 2,
+        "fileName": "resources/images/buildings/residential/res_1x1_GreenhouseHouse.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "2c302191509ea455752514cb992102613c2be2b3e98cd5a99c4a3c78958f4fb6"
+    },
+    {
+      "id": "res_1x1_KTHouseNew",
+      "source_path": "data/resources/images/buildings/residential/res_1x1_KTHouseNew.png",
+      "file": "res_1x1_KTHouseNew.png",
+      "author": "Kingtut 101",
+      "title": "Boxy House",
+      "tiles": {
+        "clip_height": 19,
+        "clip_width": 32,
+        "count": 4,
+        "fileName": "resources/images/buildings/residential/res_1x1_KTHouseNew.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "d3664da458d635601b41534a04c805dbdc24d0672804a32f460be96132e2704b"
+    },
+    {
+      "id": "res_2x2_AnnasHouse",
+      "source_path": "data/resources/images/buildings/residential/res_2x2_AnnasHouse_RF.png",
+      "file": "res_2x2_AnnasHouse_RF.png",
+      "author": "RockFort",
+      "title": "Anna's House",
+      "tiles": {
+        "clip_height": 38,
+        "clip_width": 64,
+        "count": 1,
+        "fileName": "resources/images/buildings/residential/res_2x2_AnnasHouse_RF.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 2,
+        "width": 2
+      },
+      "sha256": "30d3b4dfe0582575b6fd1581db9f60b2d3454cb1a3217b41c7c3fe6bb727aad5"
+    },
+    {
+      "id": "res_2x2_BaltVilniusBlock",
+      "source_path": "data/resources/images/buildings/residential/res_2x2_BaltVilniusBlock_RF.png",
+      "file": "res_2x2_BaltVilniusBlock_RF.png",
+      "author": "RockFort",
+      "title": "Balt Vilnius Block",
+      "tiles": {
+        "clip_height": 66,
+        "clip_width": 64,
+        "count": 1,
+        "fileName": "resources/images/buildings/residential/res_2x2_BaltVilniusBlock_RF.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 2,
+        "width": 2
+      },
+      "sha256": "5b82d60bb6dcb556ee13835a6fe0df0f5fb19c5739e8bcc23b1d5d2e837bd75b"
+    },
+    {
+      "id": "park_2x2_PicnicArea",
+      "source_path": "data/resources/images/buildings/park/park_2x2_PicnicArea.png",
+      "file": "park_2x2_PicnicArea.png",
+      "author": "Kingtut 101",
+      "title": "Picnic Area",
+      "tiles": {
+        "clip_height": 44,
+        "clip_width": 64,
+        "count": 2,
+        "fileName": "resources/images/buildings/park/park_2x2_PicnicArea.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 2,
+        "width": 2
+      },
+      "sha256": "9939aebd9a222521c7f14041f591aab4fee2fdab123cbb523343613d7b7f3b2e"
+    },
+    {
+      "id": "park_2x2_RusticPark",
+      "source_path": "data/resources/images/buildings/park/park_2x2_RusticPark_KM.png",
+      "file": "park_2x2_RusticPark_KM.png",
+      "author": "Kingtut 101",
+      "title": "Rustic Park",
+      "tiles": {
+        "clip_height": 41,
+        "clip_width": 64,
+        "count": 1,
+        "fileName": "resources/images/buildings/park/park_2x2_RusticPark_KM.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 2,
+        "width": 2
+      },
+      "sha256": "4e269cbbb86c3567535ce0eef2a161e00c98a066a8095d63ccfd8b73b9a7979b"
+    },
+    {
+      "id": "park_1x1_Garden",
+      "source_path": "data/resources/images/buildings/park/park_1x1_Garden_RF.png",
+      "file": "park_1x1_Garden_RF.png",
+      "author": "RockFort",
+      "title": "Garden",
+      "tiles": {
+        "clip_height": 25,
+        "clip_width": 32,
+        "count": 4,
+        "fileName": "resources/images/buildings/park/park_1x1_Garden_RF.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "df1bd9a1ed08c6c657ef6bb644e7a56debc5f980d27c007471a845567dcb8b05"
+    },
+    {
+      "id": "BD_1x1_LightPole_kt",
+      "source_path": "data/resources/images/decoration/buildings/BD_1x1_LightPole_kt.png",
+      "file": "BD_1x1_LightPole_kt.png",
+      "author": "Kingtut 101",
+      "title": "Light Pole",
+      "tiles": {
+        "clip_height": 22,
+        "clip_width": 32,
+        "count": 4,
+        "fileName": "resources/images/decoration/buildings/BD_1x1_LightPole_kt.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "9f514eceba995727b101ef90b3a2cd6270c5df1a93d9c96c491e65008e3e6946"
+    },
+    {
+      "id": "BD_1x1_DoubleLight",
+      "source_path": "data/resources/images/decoration/buildings/BD_1x1_RF2_DoubleLights_RF.png",
+      "file": "BD_1x1_RF2_DoubleLights_RF.png",
+      "author": "Kingtut 101",
+      "title": "Double Light",
+      "tiles": {
+        "clip_height": 23,
+        "clip_width": 32,
+        "count": 2,
+        "fileName": "resources/images/decoration/buildings/BD_1x1_RF2_DoubleLights_RF.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "12f577e2044262f7d5bd078285fc78df0b8af85153f0be58b52deac3498c47e7"
+    },
+    {
+      "id": "path_concrete",
+      "source_path": "data/resources/images/roads/paths/path_1x1_Concrete.png",
+      "file": "path_1x1_Concrete.png",
+      "author": "Kingtut 101",
+      "title": "Concrete Path",
+      "tiles": {
+        "clip_height": 23,
+        "clip_width": 32,
+        "count": 24,
+        "fileName": "resources/images/roads/paths/path_1x1_Concrete.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "8e0c97f9f65400aebb0ca5f09dabf4e29748b5af315e0668bf6c3af2ebb0b242"
+    },
+    {
+      "id": "road_EuropeanModern",
+      "source_path": "data/resources/images/roads/road_1x1_EuropeanModern.png",
+      "file": "road_1x1_EuropeanModern.png",
+      "author": "RockFort",
+      "title": "Modern European Road",
+      "tiles": {
+        "clip_height": 23,
+        "clip_width": 32,
+        "count": 24,
+        "fileName": "resources/images/roads/road_1x1_EuropeanModern.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "26f8ac12a2636a99af9519989c1b29fe75d7a31ac4cfa31e87865e082313533f"
+    },
+    {
+      "id": "road_paved",
+      "source_path": "data/resources/images/roads/road_1x1_paved.png",
+      "file": "road_1x1_paved.png",
+      "author": "Kingtut 101",
+      "title": "Paved Road",
+      "tiles": {
+        "clip_height": 23,
+        "clip_width": 32,
+        "count": 24,
+        "fileName": "resources/images/roads/road_1x1_paved.png",
+        "offset": 0,
+        "pickRandomTile": false
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "15ebb8664e707bfd0ff2290a72a0767b02953b1320bfa6aed42a1e69d868408c"
+    },
+    {
+      "id": "terrain_grass",
+      "source_path": "data/resources/images/terrain/terrain_grass.png",
+      "file": "terrain_grass.png",
+      "author": "Kingtut 101",
+      "title": "Grass",
+      "tiles": {
+        "clip_height": 15,
+        "clip_width": 32,
+        "count": 3,
+        "fileName": "resources/images/terrain/terrain_grass.png",
+        "offset": 13,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "bccc8297a57ceb87296ba576d29771a0df63f174ee5eb512fd422ac9e77b4f1c"
+    },
+    {
+      "id": "terrain_grass_forest",
+      "source_path": "data/resources/images/terrain/terrain_grass_forest.png",
+      "file": "terrain_grass_forest.png",
+      "author": "Kingtut 101",
+      "title": "Forest Grass",
+      "tiles": {
+        "clip_height": 15,
+        "clip_width": 32,
+        "count": 3,
+        "fileName": "resources/images/terrain/terrain_grass_forest.png",
+        "offset": 13,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "b29c788da202db2aced1ebc7415ef446e36c88068c34b2bb050cbcfa03f0d3a0"
+    },
+    {
+      "id": "tree_Oak_light",
+      "source_path": "data/resources/images/flora/trees/tree_1x1_Oak_light.png",
+      "file": "tree_1x1_Oak_light.png",
+      "author": "Kingtut 101",
+      "title": "Oak Trees (Light)",
+      "tiles": {
+        "clip_height": 29,
+        "clip_width": 32,
+        "count": 8,
+        "fileName": "resources/images/flora/trees/tree_1x1_Oak_light.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "7d1a59ff51975235c0fd3a9f8a823452c978369cc7dbbebe6d08b9ee9c9a1339"
+    },
+    {
+      "id": "tree_Willow_light",
+      "source_path": "data/resources/images/flora/trees/tree_1x1_Willow_light.png",
+      "file": "tree_1x1_Willow_light.png",
+      "author": "Kingtut 101",
+      "title": "Weeping Willows (Light)",
+      "tiles": {
+        "clip_height": 25,
+        "clip_width": 32,
+        "count": 6,
+        "fileName": "resources/images/flora/trees/tree_1x1_Willow_light.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "a56616dd8b6809716f56c787bcf0b17e119bf0f611de959334ce573679c057da"
+    },
+    {
+      "id": "tree_birch_light",
+      "source_path": "data/resources/images/flora/trees/tree_1x1_Birch_light.png",
+      "file": "tree_1x1_Birch_light.png",
+      "author": "Kingtut 101",
+      "title": "Birch Trees (Light)",
+      "tiles": {
+        "clip_height": 26,
+        "clip_width": 32,
+        "count": 12,
+        "fileName": "resources/images/flora/trees/tree_1x1_Birch_light.png",
+        "offset": 0,
+        "pickRandomTile": true
+      },
+      "footprint": {
+        "height": 1,
+        "width": 1
+      },
+      "sha256": "039e39c7b7432dfd34b7a15eeb7f24b5434f8abd0d39bd380389968a9979fb39"
+    }
+  ]
+}

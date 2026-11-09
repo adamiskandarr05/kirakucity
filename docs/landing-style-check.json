@@ -1,0 +1,264 @@
+{
+  "status": "fail",
+  "scope": "Additional landing-page presentation checker; independent of the game acceptance checks",
+  "findings": [
+    {
+      "check": "nav",
+      "where": "header.app-header > a.brand \"kiraku. CITY PLANNER\"",
+      "msg": "nav link wraps to a second line",
+      "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "nav"
+      ],
+      "wheres": [
+        "header.app-header > a.brand \"kiraku. CITY PLANNER\""
+      ]
+    },
+    {
+      "check": "hero-enter",
+      "where": "main#main > section.hero",
+      "msg": "the hero does not enter on load: no head line setting html.m-enter (motion.md, The hero's entrance)",
+      "fix": "put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-enter"
+      ],
+      "wheres": [
+        "main#main > section.hero"
+      ]
+    },
+    {
+      "check": "moment-none",
+      "where": "(the page)",
+      "msg": "a gaming page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+      "fix": "deal one (moments.mjs pick --page gaming) and mount it in its own section",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "moment-none"
+      ],
+      "wheres": [
+        "(the page)"
+      ]
+    },
+    {
+      "check": "hero-screen",
+      "where": "main#main > section.hero \"A maths adventure \u00c2\u00b7 Form 3\u00e2\u20ac\u201c4 Kiraku:City\"",
+      "msg": "the hero ends at 872px on a 900px screen, 28px above the fold: it ends at the fold, 1px either way (SR-1)",
+      "fix": "make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-screen"
+      ],
+      "wheres": [
+        "main#main > section.hero \"A maths adventure \u00c2\u00b7 Form 3\u00e2\u20ac\u201c4 Kiraku:City\""
+      ]
+    },
+    {
+      "check": "hero-screen",
+      "where": "footer.app-footer \"DemoBandar Kiraku is fictional.Pelita \u00c2\u00b7 \"",
+      "msg": "28px of the next section shows on the first screen (from 872px on a 900px screen): nothing below the hero shows at load (SR-1)",
+      "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-screen"
+      ],
+      "wheres": [
+        "footer.app-footer \"DemoBandar Kiraku is fictional.Pelita \u00c2\u00b7 \""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "footer.app-footer \"DemoBandar Kiraku is fictional.Pelita \u00c2\u00b7 \"",
+      "msg": "the section is 34px tall (0 screens), 866px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+      "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height"
+      ],
+      "wheres": [
+        "footer.app-footer \"DemoBandar Kiraku is fictional.Pelita \u00c2\u00b7 \""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "main#main > section.hero \"A maths adventure \u00c2\u00b7 Form 3\u00e2\u20ac\u201c4 Kiraku:City\"",
+      "msg": "the section starts at 82px, 82px below the screen grid (0 x 900px): sections start on whole screens (SR-2)",
+      "fix": "make every section above it exactly one or two screens tall, so this one starts on a whole screen",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height"
+      ],
+      "wheres": [
+        "main#main > section.hero \"A maths adventure \u00c2\u00b7 Form 3\u00e2\u20ac\u201c4 Kiraku:City\""
+      ]
+    },
+    {
+      "check": "one-section",
+      "where": "footer.app-footer \"DemoBandar Kiraku is fictional.Pelita \u00c2\u00b7 \"",
+      "msg": "the screen at scroll 6px (the top of section 1) shows 34px of section 2 beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+      "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-section"
+      ],
+      "wheres": [
+        "footer.app-footer \"DemoBandar Kiraku is fictional.Pelita \u00c2\u00b7 \""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "header.app-header \"kiraku.City Planner Bandar / Town Guru /\"",
+      "msg": "the nav's content runs 40px from the left and 40px from the right (read from its outermost blocks: no .wrap): the page's container starts at 56px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+      "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "header.app-header \"kiraku.City Planner Bandar / Town Guru /\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "main#main > section.hero \"A maths adventure \u00c2\u00b7 Form 3\u00e2\u20ac\u201c4 Kiraku:City\"",
+      "msg": "the content of section 1 runs 56px from the left and 40px from the right (read from its outermost blocks: no .wrap): 56 and 40px are not one margin; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (and 1 more like it: \"DemoBandar Kiraku is fic\") (SR-6)",
+      "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "main#main > section.hero \"A maths adventure \u00c2\u00b7 Form 3\u00e2\u20ac\u201c4 Kiraku:City\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "a.skip-link \"Langkau ke kandungan / Skip to content\"",
+      "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "a.skip-link \"Langkau ke kandungan / Skip to content\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "header.app-header > a.brand \"kiraku.City Planner\"",
+      "msg": "\"kiraku.City Planner\" runs 40-195px, outside the container lines of the nav at 56-1400px: full width is for background layers and grounds only (SR-6)",
+      "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "header.app-header > a.brand \"kiraku.City Planner\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "footer.app-footer > span.demo-label \"Demo\"",
+      "msg": "\"Demo\" runs 40-72px, outside the container lines of section 2 at 56-1400px: full width is for background layers and grounds only (and 2 more like it: header.app-header > a.brand > span.brand-mark > i:nth-of-type(1), header.app-header > a.brand > span.brand-mark > i:nth-of-type(2)) (SR-6)",
+      "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "footer.app-footer > span.demo-label \"Demo\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section.hero > div.hero-world > div.world-bottomline > span.pixel-cross \"\u00e2\u0153\u00a6\"",
+      "msg": "1 text block starts on a left line at x 649, 593px from the container's left: text starts on the container's left, or on one split line (x 626, 740, 854) (and 1 more like it: x 40) (SR-6)",
+      "fix": "start the text on the container's left, or on the one split line every split shares",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section.hero > div.hero-world > div.world-bottomline > span.pixel-cross \"\u00e2\u0153\u00a6\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "main#main > section.hero > div.hero-world \"Bandar KirakuA town built on your ideas\u00e2\u0153\u00a6\"",
+      "msg": "a box over half the container wide runs 628-1384px, not on the container's lines at 56-1400px (and 1 more like it: \"Made for curious minds.E\") (SR-6)",
+      "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "main#main > section.hero > div.hero-world \"Bandar KirakuA town built on your ideas\u00e2\u0153\u00a6\""
+      ]
+    },
+    {
+      "check": "container",
+      "where": "page",
+      "msg": "no .wrap",
+      "fix": "put the content in one .wrap",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "container"
+      ],
+      "wheres": [
+        "page"
+      ]
+    }
+  ]
+}

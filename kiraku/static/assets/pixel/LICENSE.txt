@@ -1,0 +1,3 @@
+Kiraku pixel adaptations and original owl, NPC, and car sprites are dedicated to CC0 1.0 Universal.
+Derived building and park art: Kenney, CC0. See ../licenses/ and SOURCES.json.
+https://creativecommons.org/publicdomain/zero/1.0/

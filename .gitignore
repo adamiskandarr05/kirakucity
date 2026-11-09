@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+instance/
+*.sqlite*
+.env
+.qa/
+.pytest-tmp/

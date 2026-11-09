@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ language }}" data-type="software" data-radius="soft" data-buttons="block">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="page-type" content="software"><meta name="site-kind" content="gaming">
+  <meta name="theme-color" content="#1B2433">
+  <meta name="description" content="A maths city-planning game for secondary students. Solve linked cases and bring the fictional Bandar Kiraku to life.">
+  <meta property="og:title" content="Kiraku: City Planner"><meta property="og:type" content="website">
+  <meta property="og:description" content="Kira, bina, selesaikan. Exact maths, a living town, and every decision explained.">
+  <meta property="og:image" content="/static/assets/town-preview.png"><meta name="twitter:card" content="summary_large_image">
+  <title>{% block title %}Kiraku: City Planner{% endblock %}</title>
+  <link rel="icon" href="/static/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/assets/fonts/fonts.css">
+  <link rel="stylesheet" href="/static/css/app.css">
+  {% block head %}{% endblock %}
+</head>
+<body class="page-{{ page }}">
+  <a class="skip-link" href="#main">{{ t('Skip to content', 'Langkau ke kandungan') }}</a>
+  <header class="app-header">
+    <a class="brand" href="/" aria-label="Kiraku home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>kiraku<span class="brand-dot">.</span><small>City Planner</small></span></a>
+    <nav aria-label="Navigasi utama / Main navigation">
+      <a href="/play" {% if page=='play' %}aria-current="page"{% endif %}>{{ t('Town', 'Bandar') }}</a>
+      <a href="/teacher" {% if page=='teacher' %}aria-current="page"{% endif %}>{{ t('Teacher', 'Guru') }}</a>
+    </nav>
+    <div class="header-end"><span class="local-badge"><span></span> {{ t('Saved locally', 'Disimpan setempat') }}</span><button class="pupil-switch" id="switch-pupil" hidden><span class="avatar" id="header-avatar">A</span><span id="header-pupil">Pupil A</span><span aria-hidden="true">⌄</span></button><button class="icon-btn settings-trigger" id="open-settings" aria-label="{{ t('Settings', 'Tetapan') }}">⚙</button></div>
+  </header>
+  {% block content %}{% endblock %}
+  <footer class="app-footer"><span class="demo-label">Demo</span><span>{{ t('Bandar Kiraku is fictional.', 'Bandar Kiraku ialah bandar rekaan.') }}</span><a href="/static/assets/cytopia/NOTICE.txt" target="_blank" rel="noopener">{{ t('City art: Cytopia', 'Seni bandar: Cytopia') }}</a><span class="llm-notice">{% if llm_enabled %}{{ t('Pelita · AI narration enabled', 'Pelita · penceritaan AI diaktifkan') }}{% else %}{{ t('Pelita · local guide', 'Pelita · panduan setempat') }}{% endif %}</span></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="settings-dialog" class="settings-dialog" aria-labelledby="settings-title">
+    <div class="dialog-heading"><h2 id="settings-title">{{ t('Settings', 'Tetapan') }}</h2><button class="icon-btn" data-close-dialog aria-label="{{ t('Close settings', 'Tutup tetapan') }}">×</button></div>
+    <fieldset><legend>{{ t('Language', 'Bahasa') }}</legend><div class="language-options"><label><input type="radio" name="language" value="en" {% if language=='en' %}checked{% endif %}> English</label><label><input type="radio" name="language" value="ms" {% if language=='ms' %}checked{% endif %}> Bahasa Melayu</label></div></fieldset>
+    <label class="motion-setting"><input type="checkbox" id="settings-motion"> {{ t('Pause town animation', 'Jeda animasi bandar') }}</label>
+    <div class="demo-setting"><h3>{{ t('Presentation demo', 'Demo pembentangan') }}</h3><p>{{ t('Prepare eight completed cases for fictional Pupil A, with checked answers, town improvements and saved agent decisions. Existing progress is kept.', 'Sediakan lapan kes selesai untuk Murid A rekaan, dengan jawapan disahkan, pembangunan bandar dan keputusan ejen tersimpan. Kemajuan sedia ada dikekalkan.') }}</p><button class="btn secondary" id="prepare-demo">{{ t('Prepare demo progress', 'Sediakan kemajuan demo') }}</button></div>
+    <a class="text-button" href="/teacher">{{ t('Open teacher desk ↗', 'Buka ruang guru ↗') }}</a>
+  </dialog>
+  <script type="module" src="/static/js/settings.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

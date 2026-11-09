@@ -1,0 +1,26 @@
+Cytopia city artwork used in Kiraku: City Planner
+================================================
+
+Copyright Cytopia contributors and the individual artists listed in
+manifest.json and UPSTREAM-CREDITS.txt.
+
+Source: https://github.com/CytopiaTeam/Cytopia
+Pinned revision: c70bbce3ba8b0ba23b8dcce9ff8bc8df0af971f8
+
+The original PNG sprite sheets in this directory were copied verbatim from
+Cytopia's repository under its GNU GPL version 3 licence. A complete copy of
+that licence is included as LICENSE-GPL-3.0.txt. No warranty is provided.
+The manifest records source paths, individual artist credits, frame metadata
+and SHA-256 hashes. Original sheets are included as the editable asset source.
+
+Kiraku's previews/ files are first-frame extractions of those original PNG
+sheets, made on 9 November 2026. The source art's GPL licence is retained.
+The city layout, renderer, maths engine and pupil interface are Kiraku code;
+Cytopia's C++/SDL engine has not been imported or represented as a web port.
+
+Featured artists: Kingtut 101, RockFort, Yusuf8a684, MaroonShaded, THEMAX,
+and other Cytopia contributors named in the per-asset manifest.
+
+You may redistribute and modify the Cytopia assets under the included licence.
+The upstream source at the pinned revision is available at:
+https://github.com/CytopiaTeam/Cytopia/tree/c70bbce3ba8b0ba23b8dcce9ff8bc8df0af971f8

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Bandar Kiraku — Kiraku: City Planner{% endblock %}
+{% block content %}
+<main id="main" class="play-shell">
+  <section id="pupil-select" class="pupil-select">
+    <div class="select-intro"><span class="eyebrow"><span class="tiny-square"></span> {{ t('Your town starts here', 'Bandar anda bermula di sini') }}</span><h1>{{ t('Choose your planner.', 'Pilih perancang anda.') }}</h1><p>{{ t('Three fictional pupils. Three different starting points. Pick a profile and bring your ideas to Bandar Kiraku.', 'Tiga murid rekaan dengan titik permulaan berbeza. Pilih profil dan sumbangkan idea anda kepada Bandar Kiraku.') }}</p></div>
+    <div id="pupil-cards" class="pupil-grid" aria-live="polite"><p>{{ t('Loading planners…', 'Memuatkan perancang…') }}</p></div>
+    <div class="select-bottom"><img src="/static/assets/pelita.png" alt="" width="56" height="56"><p><strong>{{ t('Pelita says', 'Pesanan Pelita') }}</strong>{{ t('There’s no rush. A wrong turn is a chance to see the maths differently.', 'Tidak perlu tergesa-gesa. Kesilapan memberi peluang untuk memahami matematik dengan cara baharu.') }}</p></div>
+  </section>
+  <section id="town-screen" class="town-screen" hidden>
+    <div class="town-heading"><div><span class="eyebrow">{{ t('Your neighbourhood', 'Kejiranan anda') }}</span><h1>Bandar Kiraku<span class="town-title-dot">.</span></h1><p id="town-subtitle">{{ t('A town full of possibilities.', 'Bandar penuh kemungkinan.') }}</p></div><div class="town-stats" id="town-stats" aria-label="Town buildings"></div></div>
+    <div id="town-canvas" role="img" aria-label="Interactive isometric Bandar Kiraku town. Use the building list for keyboard access."></div>
+    <div class="district-navigation"><button id="toggle-districts" aria-expanded="false">{{ t('Districts', 'Kawasan bandar') }} <span>⌄</span></button><span class="eyebrow">{{ t('Districts', 'Kawasan bandar') }}</span><nav id="district-nav" aria-label="City districts"></nav><p>{{ t('Drag to explore · Scroll to zoom', 'Seret untuk meneroka · Tatal untuk zum') }}</p><a class="city-art-credit" href="/static/assets/cytopia/NOTICE.txt" target="_blank" rel="noopener">{{ t('City art: Cytopia ↗', 'Seni bandar: Cytopia ↗') }}</a><button class="text-button" id="building-list-toggle" aria-expanded="false">{{ t('Building list ↗', 'Senarai bangunan ↗') }}</button></div>
+    <div class="map-tools"><button class="icon-btn" id="zoom-in" aria-label="{{ t('Zoom in', 'Zum masuk') }}">+</button><button class="icon-btn" id="zoom-out" aria-label="{{ t('Zoom out', 'Zum keluar') }}">−</button><button class="icon-btn" id="reset-map" aria-label="{{ t('Centre town', 'Pusatkan bandar') }}">⌖</button><button class="icon-btn" id="city-overview" aria-label="{{ t('View whole city', 'Lihat seluruh bandar') }}">▦</button><button class="icon-btn" id="find-pelita" aria-label="{{ t('Find Pelita', 'Cari Pelita') }}"><img src="/static/assets/pelita.png" alt=""></button><button class="icon-btn motion-btn" id="toggle-motion" aria-pressed="false" aria-label="{{ t('Pause town motion', 'Jeda animasi bandar') }}">Ⅱ</button></div>
+    <div class="map-legend"><span><i class="legend-dot built"></i> {{ t('Open', 'Dibuka') }}</span><span><i class="legend-dot empty"></i> {{ t('Empty', 'Kosong') }}</span><span><i class="legend-dot waiting"></i> {{ t('Waiting', 'Menunggu') }}</span></div>
+    <div class="town-coordinates" aria-hidden="true">Your city, one case at a time.<br><span>40 × 40 tiles · Four neighbourhoods</span></div>
+    <div class="town-bottom" id="town-bottom"><div class="pelita-card"><img src="/static/assets/pelita.png" alt="Pelita the owl" width="66" height="66"><div><strong>Pelita <span>{{ t('Your town guide', 'Pemandu bandar anda') }}</span></strong><p id="pelita-town">{{ t('Find me in town to see what the agents are working on.', 'Cari saya di bandar untuk melihat tugasan ejen.') }}</p></div></div><button class="btn primary next-btn" id="next-case">{{ t('Next case', 'Kes seterusnya') }}<span aria-hidden="true">→</span></button></div>
+    <section class="trace-panel" id="trace-panel" hidden aria-labelledby="trace-title"><div class="trace-heading"><div><span class="status-dot"></span><h2 id="trace-title">{{ t('Agent activity', 'Aktiviti ejen') }}</h2></div><span id="trace-count">0 decisions</span></div><div id="trace-list" class="trace-list" aria-live="polite"></div></section>
+    <aside id="case-panel" class="case-panel" aria-label="Maths case" hidden></aside>
+    <div id="building-detail" class="building-detail" hidden></div>
+    <div id="building-list" class="building-list" hidden></div>
+  </section>
+</main><dialog id="agent-dialog" class="settings-dialog" aria-labelledby="agent-title"><div class="dialog-heading"><h2 id="agent-title">Pelita</h2><button class="icon-btn" data-close-dialog aria-label="{{ t('Close', 'Tutup') }}">×</button></div><p>{{ t('Your town guide. These actions come from saved agent decisions.', 'Pemandu bandar anda. Aktiviti ini berasal daripada keputusan ejen yang disimpan.') }}</p><div id="agent-activity"></div></dialog>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/phaser-loader.js"></script>
+<script type="module" src="/static/js/play.js"></script>
+{% endblock %}

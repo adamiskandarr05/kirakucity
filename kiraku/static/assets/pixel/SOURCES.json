@@ -1,0 +1,37 @@
+[
+  {
+    "pack": "buildings",
+    "file": "PNG/buildingTiles_000.png",
+    "sha256": "d6f183657fb305a7bdce8d7741299b9711492c8c7441ecc806e32b3cd31a3c63"
+  },
+  {
+    "pack": "buildings",
+    "file": "PNG/buildingTiles_069.png",
+    "sha256": "2e7109e87ecd52078a9c19749772dbc38ab13d28c4e1581f26290d19dc98a533"
+  },
+  {
+    "pack": "buildings",
+    "file": "PNG/buildingTiles_018.png",
+    "sha256": "6555b9e8c6fce9784d9863978f6a8a28e68c769c006763c74a8226dc60323572"
+  },
+  {
+    "pack": "city",
+    "file": "PNG/cityTiles_067.png",
+    "sha256": "ad2c037b9851dc89173b50c80bfdbbb711552aacca51f75fe8b442abf9c9c2b7"
+  },
+  {
+    "pack": "city",
+    "file": "Details/cityDetails_010.png",
+    "sha256": "3282ef8762d6965ea853bc60ae8035252ca1fc208e0c66e9464ae694d5f7760f"
+  },
+  {
+    "pack": "buildings",
+    "file": "PNG/buildingTiles_100.png",
+    "sha256": "4c5658717a11043de55b700089e8e3403cd78fe62f2a29205039ba7bae57137f"
+  },
+  {
+    "pack": "city",
+    "file": "Details/cityDetails_010.png",
+    "sha256": "3282ef8762d6965ea853bc60ae8035252ca1fc208e0c66e9464ae694d5f7760f"
+  }
+]

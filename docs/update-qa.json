@@ -1,0 +1,700 @@
+{
+  "checks": [
+    {
+      "ok": true,
+      "description": "Eight genuinely checked demo cases prepared"
+    },
+    {
+      "ok": true,
+      "description": "1886\u00d7782 en: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1886 en: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "1886\u00d7782 en: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "1886 en: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "1886 en: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "1886 en: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "1886 en: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "1886 en: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "1886 en: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "1886\u00d7782 ms: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1886 ms: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "1886\u00d7782 ms: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "1886 ms: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "1886 ms: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "1886 ms: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "1886 ms: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "1886 ms: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "1886 ms: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "1440\u00d7900 en: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440 en: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "1440\u00d7900 en: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "1440 en: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "1440 en: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "1440 en: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "1440 en: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "Unchanged state reuses all 118 building objects"
+    },
+    {
+      "ok": true,
+      "description": "Dragging pans the map and settles with inertia"
+    },
+    {
+      "ok": true,
+      "description": "Zoom interpolates toward its target"
+    },
+    {
+      "ok": true,
+      "description": "Smooth zoom reaches its target"
+    },
+    {
+      "ok": true,
+      "description": "Settings opens as an accessible dialog"
+    },
+    {
+      "ok": true,
+      "description": "Settings pauses background animation"
+    },
+    {
+      "ok": true,
+      "description": "1440 en: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "1440 en: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "1440\u00d7900 ms: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440 ms: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "1440\u00d7900 ms: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "1440 ms: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "1440 ms: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "1440 ms: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "1440 ms: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "1440 ms: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "1440 ms: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "1280\u00d7720 en: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1280 en: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "1280\u00d7720 en: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "1280 en: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "1280 en: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "1280 en: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "1280 en: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "1280 en: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "1280 en: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "1280\u00d7720 ms: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1280 ms: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "1280\u00d7720 ms: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "1280 ms: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "1280 ms: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "1280 ms: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "1280 ms: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "1280 ms: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "1280 ms: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "1024\u00d7768 en: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1024 en: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "1024\u00d7768 en: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "1024 en: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "1024 en: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "1024 en: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "1024 en: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "1024 en: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "1024 en: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "1024\u00d7768 ms: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1024 ms: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "1024\u00d7768 ms: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "1024 ms: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "1024 ms: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "1024 ms: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "1024 ms: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "1024 ms: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "1024 ms: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "768\u00d71024 en: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "768 en: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "768\u00d71024 en: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "768 en: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "768 en: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "768 en: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "768 en: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "768 en: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "768 en: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "768\u00d71024 ms: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "768 ms: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "768\u00d71024 ms: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "768 ms: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "768 ms: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "768 ms: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "768 ms: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "768 ms: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "768 ms: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "812\u00d7500 en: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "812 en: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "812\u00d7500 en: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "812 en: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "812 en: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "812 en: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "812 en: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "812 en: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "812 en: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "812\u00d7500 ms: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "812 ms: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "812\u00d7500 ms: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "812 ms: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "812 ms: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "812 ms: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "812 ms: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "812 ms: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "812 ms: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "390\u00d7844 en: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390 en: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "390\u00d7844 en: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "390 en: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "390 en: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "390 en: expanded district list separated []"
+    },
+    {
+      "ok": true,
+      "description": "390 en: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "390 en: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "390 en: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "en: language switch retains draft and case view"
+    },
+    {
+      "ok": true,
+      "description": "390 en: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "390\u00d7844 ms: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390 ms: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "390\u00d7844 ms: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "390 ms: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "390 ms: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "390 ms: expanded district list separated []"
+    },
+    {
+      "ok": true,
+      "description": "390 ms: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "390 ms: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "390 ms: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "ms: language switch retains draft and case view"
+    },
+    {
+      "ok": true,
+      "description": "390 ms: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "320\u00d7844 en: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "320 en: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "320\u00d7844 en: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "320 en: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "320 en: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "320 en: expanded district list separated []"
+    },
+    {
+      "ok": true,
+      "description": "320 en: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "320 en: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "320 en: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "320 en: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "320\u00d7844 ms: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "320 ms: town controls fit the window height"
+    },
+    {
+      "ok": true,
+      "description": "320\u00d7844 ms: no HUD overlaps []"
+    },
+    {
+      "ok": true,
+      "description": "320 ms: visible Pelita avatar loaded"
+    },
+    {
+      "ok": true,
+      "description": "320 ms: demo completion count shown"
+    },
+    {
+      "ok": true,
+      "description": "320 ms: expanded district list separated []"
+    },
+    {
+      "ok": true,
+      "description": "320 ms: finding Pelita reveals the guide"
+    },
+    {
+      "ok": true,
+      "description": "320 ms: avatar labels avoid every HUD panel"
+    },
+    {
+      "ok": true,
+      "description": "320 ms: case HUD separated []"
+    },
+    {
+      "ok": true,
+      "description": "320 ms: no browser errors"
+    },
+    {
+      "ok": true,
+      "description": "en: localized teacher report has three sections"
+    },
+    {
+      "ok": true,
+      "description": "en: teacher report uses selected language"
+    },
+    {
+      "ok": true,
+      "description": "en: teacher desk loads without an error"
+    },
+    {
+      "ok": true,
+      "description": "en: demo preparation can be repeated from Settings"
+    },
+    {
+      "ok": true,
+      "description": "ms: localized teacher report has three sections"
+    },
+    {
+      "ok": true,
+      "description": "ms: teacher report uses selected language"
+    },
+    {
+      "ok": true,
+      "description": "ms: teacher desk loads without an error"
+    },
+    {
+      "ok": true,
+      "description": "ms: demo preparation can be repeated from Settings"
+    },
+    {
+      "ok": true,
+      "description": "Teacher desk has no browser errors in either language"
+    },
+    {
+      "ok": true,
+      "description": "Clicking the town avatar opens actual saved agent activity"
+    },
+    {
+      "ok": true,
+      "description": "Every avatar activity is backed by a saved decision ID"
+    }
+  ],
+  "screens": [
+    "19-town-polished-1886-en.png",
+    "19-town-polished-1886-ms.png",
+    "19-town-polished-1280-en.png",
+    "19-town-polished-1280-ms.png",
+    "19-town-polished-390-en.png",
+    "19-town-polished-390-ms.png",
+    "19-town-polished-320-en.png",
+    "19-town-polished-320-ms.png",
+    "21-settings-390-en.png",
+    "21-settings-390-ms.png",
+    "20-pelita-activity.png"
+  ],
+  "errors": [],
+  "frame_samples": [
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "median_ms": 6.9,
+      "p95_ms": 7.1
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "screens": [
+    "02-pupil-select-1440.png",
+    "03-town-1440.png",
+    "17-cytopia-skyline-1440.png",
+    "18-city-overview-1440.png",
+    "04-case-brief-1440.png",
+    "05-working-1440.png",
+    "06-rejected-1440.png",
+    "07-hint-1-1440.png",
+    "07-hint-2-1440.png",
+    "07-hint-3-1440.png",
+    "08-trace-raw-1440.png",
+    "09-verified-1440.png",
+    "10-result-1440.png",
+    "11-building-animation-1440.png",
+    "12-town-grown-1440.png",
+    "13-building-funding-1440.png",
+    "14-teacher-1440.png",
+    "01-landing-1440.png",
+    "02-pupil-select-390.png",
+    "03-town-390.png",
+    "17-cytopia-skyline-390.png",
+    "18-city-overview-390.png",
+    "04-case-brief-390.png",
+    "05-working-390.png",
+    "06-rejected-390.png",
+    "07-hint-1-390.png",
+    "07-hint-2-390.png",
+    "07-hint-3-390.png",
+    "08-trace-raw-390.png",
+    "09-verified-390.png",
+    "10-result-390.png",
+    "11-building-animation-390.png",
+    "12-town-grown-390.png",
+    "13-building-funding-390.png",
+    "14-teacher-390.png",
+    "01-landing-390.png",
+    "15-reduced-motion-1440.png",
+    "16-responsive-town-1024.png",
+    "16-responsive-town-768.png",
+    "16-responsive-town-320.png"
+  ],
+  "checks": [
+    {
+      "ok": true,
+      "description": "02-pupil-select at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: Phaser town renders"
+    },
+    {
+      "ok": true,
+      "description": "1440px: seven walking NPCs move along roads"
+    },
+    {
+      "ok": true,
+      "description": "1440px: three cars on road loop"
+    },
+    {
+      "ok": true,
+      "description": "1440px: all visible map labels are at least 14 rendered pixels"
+    },
+    {
+      "ok": true,
+      "description": "1440px: no overlapping town labels ([])"
+    },
+    {
+      "ok": true,
+      "description": "03-town at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: original Cytopia artwork is loaded"
+    },
+    {
+      "ok": true,
+      "description": "1440px: all 118 saved city lots are rendered"
+    },
+    {
+      "ok": true,
+      "description": "1440px: district control does not click a building behind it (skyline)"
+    },
+    {
+      "ok": true,
+      "description": "17-cytopia-skyline at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: district control does not click a building behind it (homes)"
+    },
+    {
+      "ok": true,
+      "description": "1440px: district control does not click a building behind it (gardens)"
+    },
+    {
+      "ok": true,
+      "description": "1440px: district control does not click a building behind it (market)"
+    },
+    {
+      "ok": true,
+      "description": "1440px: zoom control works"
+    },
+    {
+      "ok": true,
+      "description": "18-city-overview at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "04-case-brief at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: Pupil A starts with reverse percentages"
+    },
+    {
+      "ok": true,
+      "description": "05-working at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: later steps locked"
+    },
+    {
+      "ok": true,
+      "description": "1440px: trap feedback names the mistake"
+    },
+    {
+      "ok": true,
+      "description": "1440px: rejected step creates one open issue"
+    },
+    {
+      "ok": true,
+      "description": "06-rejected at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: hint level 1 answer policy"
+    },
+    {
+      "ok": true,
+      "description": "07-hint-1 at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: hint level 2 answer policy"
+    },
+    {
+      "ok": true,
+      "description": "07-hint-2 at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: hint level 3 answer policy"
+    },
+    {
+      "ok": true,
+      "description": "07-hint-3 at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "08-trace-raw at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "09-verified at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "10-result at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: every displayed trace entry matches decision_log exactly"
+    },
+    {
+      "ok": true,
+      "description": "1440px: real building growth captured mid-animation"
+    },
+    {
+      "ok": true,
+      "description": "11-building-animation at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "12-town-grown at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: labels remain separated after construction ([])"
+    },
+    {
+      "ok": true,
+      "description": "13-building-funding at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: funded building exposes verified calculation"
+    },
+    {
+      "ok": true,
+      "description": "1440px: teacher report has three sections"
+    },
+    {
+      "ok": true,
+      "description": "14-teacher at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: landing uses real town screenshot"
+    },
+    {
+      "ok": true,
+      "description": "01-landing at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "1440px: no browser script errors ([])"
+    },
+    {
+      "ok": true,
+      "description": "02-pupil-select at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: Phaser town renders"
+    },
+    {
+      "ok": true,
+      "description": "390px: seven walking NPCs move along roads"
+    },
+    {
+      "ok": true,
+      "description": "390px: three cars on road loop"
+    },
+    {
+      "ok": true,
+      "description": "390px: all visible map labels are at least 14 rendered pixels"
+    },
+    {
+      "ok": true,
+      "description": "390px: no overlapping town labels ([])"
+    },
+    {
+      "ok": true,
+      "description": "03-town at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: original Cytopia artwork is loaded"
+    },
+    {
+      "ok": true,
+      "description": "390px: all 118 saved city lots are rendered"
+    },
+    {
+      "ok": true,
+      "description": "390px: district control does not click a building behind it (skyline)"
+    },
+    {
+      "ok": true,
+      "description": "17-cytopia-skyline at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: district control does not click a building behind it (homes)"
+    },
+    {
+      "ok": true,
+      "description": "390px: district control does not click a building behind it (gardens)"
+    },
+    {
+      "ok": true,
+      "description": "390px: district control does not click a building behind it (market)"
+    },
+    {
+      "ok": true,
+      "description": "390px: zoom control works"
+    },
+    {
+      "ok": true,
+      "description": "18-city-overview at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "04-case-brief at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: Pupil A starts with reverse percentages"
+    },
+    {
+      "ok": true,
+      "description": "05-working at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: later steps locked"
+    },
+    {
+      "ok": true,
+      "description": "390px: trap feedback names the mistake"
+    },
+    {
+      "ok": true,
+      "description": "390px: rejected step creates one open issue"
+    },
+    {
+      "ok": true,
+      "description": "06-rejected at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: hint level 1 answer policy"
+    },
+    {
+      "ok": true,
+      "description": "07-hint-1 at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: hint level 2 answer policy"
+    },
+    {
+      "ok": true,
+      "description": "07-hint-2 at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: hint level 3 answer policy"
+    },
+    {
+      "ok": true,
+      "description": "07-hint-3 at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "08-trace-raw at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "09-verified at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "10-result at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: every displayed trace entry matches decision_log exactly"
+    },
+    {
+      "ok": true,
+      "description": "390px: real building growth captured mid-animation"
+    },
+    {
+      "ok": true,
+      "description": "11-building-animation at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "12-town-grown at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: labels remain separated after construction ([])"
+    },
+    {
+      "ok": true,
+      "description": "13-building-funding at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: funded building exposes verified calculation"
+    },
+    {
+      "ok": true,
+      "description": "390px: teacher report has three sections"
+    },
+    {
+      "ok": true,
+      "description": "14-teacher at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: landing uses real town screenshot"
+    },
+    {
+      "ok": true,
+      "description": "01-landing at 390px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "390px: no browser script errors ([])"
+    },
+    {
+      "ok": true,
+      "description": "Reduced motion stops NPC traffic"
+    },
+    {
+      "ok": true,
+      "description": "Reduced motion stops car traffic"
+    },
+    {
+      "ok": true,
+      "description": "Reduced motion is reflected in motion control"
+    },
+    {
+      "ok": true,
+      "description": "15-reduced-motion at 1440px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "16-responsive-town at 1024px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "16-responsive-town at 768px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "16-responsive-town at 320px: no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "description": "WCAG AA: panel text contrast 11.37:1"
+    },
+    {
+      "ok": true,
+      "description": "WCAG AA: muted text contrast 6.97:1"
+    },
+    {
+      "ok": true,
+      "description": "WCAG AA: action text contrast 8.68:1"
+    },
+    {
+      "ok": true,
+      "description": "WCAG AA: verified text contrast 5.79:1"
+    },
+    {
+      "ok": true,
+      "description": "WCAG AA: rejected text contrast 4.58:1"
+    },
+    {
+      "ok": true,
+      "description": "WCAG AA: trace information contrast 7.49:1"
+    }
+  ],
+  "errors": [],
+  "external_network": "blocked; bundled fallback tested"
+}

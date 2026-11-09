@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Kiraku: City Planner — a maths town for secondary students{% endblock %}
+{% block content %}
+<main id="main" class="landing">
+  <section class="hero" data-enter>
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="tiny-square"></span> {{ t('A maths adventure · Form 3–4', 'Pengembaraan matematik · Tingkatan 3–4') }}</span>
+      <h1>Kiraku:<br><span>City Planner.</span></h1>
+      <p class="tagline">{{ t('Count, build, solve.', 'Kira, bina, selesaikan.') }}</p>
+      <p class="hero-lead">{{ t('Count, build, solve. Bring a little town to life, one maths case at a time. Pelita the owl is here to help you work it out.', 'Hidupkan bandar anda dengan menyelesaikan kes matematik. Pelita si burung hantu sedia membantu anda.') }}</p>
+      <a class="btn primary" href="/play">{{ t('Try it now', 'Cuba sekarang') }}<span aria-hidden="true">↗</span></a>
+      <p class="hero-note">{{ t('4 maths topics. Your own pace. Every step explained.', '4 topik matematik. Ikut rentak anda. Setiap langkah diterangkan.') }}</p>
+    </div>
+    <div class="hero-world"><div class="world-topline"><span><i class="status-dot"></i> Bandar Kiraku</span><span>{{ t('A town built on your ideas', 'Bandar dibina daripada idea anda') }}</span></div><img id="town-preview" src="/static/assets/town-preview.png" alt="The isometric town of Bandar Kiraku, with warm red shops, green parks, roads and waiting plots." width="1000" height="720"><div class="world-bottomline"><span class="pixel-cross" aria-hidden="true">✦</span><span>{{ t('Solve a case. Open a shop. Watch your town grow.', 'Selesaikan kes. Buka kedai. Lihat bandar berkembang.') }}</span></div></div>
+    <div class="hero-foot"><span>{{ t('Made for curious minds.', 'Untuk minda yang ingin tahu.') }}</span><span>{{ t('Exact maths → thoughtful decisions → a living town', 'Matematik tepat → keputusan teliti → bandar yang hidup') }}</span></div>
+  </section>
+</main>
+{% endblock %}
